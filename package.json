@@ -1,0 +1,23 @@
+{
+  "name": "daddysstampdev",
+  "version": "1.0.0",
+  "description": "아빠의 육아스탬프 개발계",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamyoon/daddysstampdev.git"
+  },
+  "author": "Seung Hyun Yoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dreamyoon/daddysstampdev/issues"
+  },
+  "homepage": "https://github.com/dreamyoon/daddysstampdev#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4"
+  }
+}

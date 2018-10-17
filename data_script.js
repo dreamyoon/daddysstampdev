@@ -1,0 +1,6 @@
+db.getCollection("dev").find({})
+db.dev.find( {} )
+db.dev.find( { type: { $in: [1] } } )
+db.dev.find( { type: 2, age: { $lt: 40 } } )
+db.dev.count()
+db.dev.find( { type: { $in: [1,2] } } ).sort({name:-1})

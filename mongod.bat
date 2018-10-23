@@ -1,0 +1,1 @@
+"D:\Program Files"\MongoDB\Server\4.0\bin\mongod.exe --dbpath d:\2018DevPrivate\daddysstampdev\data

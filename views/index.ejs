@@ -1,15 +1,35 @@
-<!DOCTYPE html>
+<% layout('layout/layout')%>
+
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/master.css" type="text/css">
-    <title>Test EJS page</title>
+
+    <title>Index</title>
 </head>
 
 <body>
-    <h1>Hello EJS</h1>
-    <br>
-
-    view counter from db: <%= count %>
+<div class="scrollable">
+    <div class="voice_attendee">
+        <img src="images/thumbnail/profile/이주연.png">
+        <img src="images/thumbnail/check.png" class="cover">
+        <div class="calling_div"></div>
+        <img src="images/thumbnail/icon_video.png" class="video">
+        <label>이주연</label>
+    </div>
+    <div class="voice_attendee">
+        <img src="images/thumbnail/profile/박현지.png">
+        <img src="images/thumbnail/check.png" class="cover">
+        <div class="calling_div"></div>
+        <img src="images/thumbnail/icon_video.png" class="video">
+        <label>박현지</label>
+    </div>
+    <div class="voice_attendee">
+        <img src="images/thumbnail/profile/송재석.png">
+        <img src="images/thumbnail/check.png" class="cover">
+        <div class="calling_div"></div>
+        <img src="images/thumbnail/icon_video.png" class="video">
+        <label>송재석</label>
+    </div>
+</div>
 </body>
 </html>

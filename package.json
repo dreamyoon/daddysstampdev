@@ -2,9 +2,8 @@
   "name": "daddysstampdev",
   "version": "1.0.0",
   "description": "아빠의 육아스탬프 개발계",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -17,9 +16,15 @@
   },
   "homepage": "https://github.com/dreamyoon/daddysstampdev#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "clog": "^0.1.6",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.6.1",
+    "ejs-locals": "^1.0.2",
     "express": "^4.16.4",
+    "http": "0.0.0",
     "mongoose": "^5.3.5",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "serve-favicon": "^2.5.0"
   }
 }

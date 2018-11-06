@@ -1,0 +1,150 @@
+body{
+    font-family: "Droid Sans",sans-serif;
+    background: #1b273f;
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+@media screen and (min-width:360px){
+    body{height:640px;}
+    html{font-size: 10px;}
+}
+@media screen and (min-width:720px){
+    body{height:1280px;}
+    html{font-size: 20px;}
+}
+@media screen and (min-width:1440px){
+    body{height:2560px;}
+    html{font-size: 40px;}
+}
+
+#page {
+    width: 980px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#header {/*페이지 헤더*/
+    position: relative;
+    height: 110px;
+    margin-bottom: 20px;
+}
+#main {
+    position: relative;
+    padding:0 10px;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    border: 1px solid white;
+}
+
+.scrollable{
+    display: block;
+    position: absolute;
+    top:13.3%;
+    left:0;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    color: white;
+    transition: top 0.5s;
+    border: 1px solid white;
+}
+
+.scrollable -webkit-scrollbar{
+    display: none;
+}
+.voice_attendee{
+    margin-left: 1.2rem;
+    margin-right: 0.5rem;
+    width: 4.5rem;
+    height: 6rem;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+}
+.voice_attendee img{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.voice_attendee.active img{
+    border-radius: 50%;
+    border: 0.15rem solid rgba(20,197,6,1);
+}
+.voice_attendee.active label{
+    bottom: -0.2rem;
+}
+
+
+.voice_attendee.inactive img{
+    opacity:0.6;
+}
+
+.voice_attendee img.video{
+    display: none;
+}
+
+.voice_attendee.isVideo img.video{
+    display: inline-block;
+    width: 0.84rem;
+    height: 0.6rem;
+    position: absolute;
+    bottom: 0.3rem;
+    left: -0.3rem;
+    border-radius: 0;
+    border: 0;
+}
+.voice_attendee.active.isVideo img.video{
+    bottom: 0rem;
+}
+
+.voice_attendee label{
+    width: 4.5rem;
+    font-size: 1.0rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.voice_attendee .cover{
+    width: 4.5rem;
+    height: 4.5rem;
+    display: none;
+}
+.voice_attendee.checked .cover{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.voice_attendee.active.checked .cover{
+    display: inline-block;
+    position: absolute;
+    left: 0.075em;
+    top: 0.075em;
+}
+.voice_attendee .calling_div{
+    width: 4.5rem;
+    height: 4.5rem;
+    display: none;
+}
+.voice_attendee.calling .calling_div{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top:0;
+    border-radius: 50%;
+    animation-name: attendee-calling-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes attendee-calling-animation{
+    0%{background: linear-gradient(135deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(255,255,255,0.2));}
+    50%{background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.5));}
+    100%{background: linear-gradient(135deg, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.2) 50%,rgba(255,255,255,0));}
+}
